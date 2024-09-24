@@ -111,7 +111,7 @@ class Home extends Component {
 
   renderForm = () => {
     return (
-      <form className="form-login" onClick={this.onSubmitForm}>
+      <form onClick={this.onSubmitForm}>
         <div className="inputGroup-btn">
           <button type="submit" className="task-button">
             Add Task
@@ -127,8 +127,11 @@ class Home extends Component {
     return (
       <div className="home-container">
         <h1 className="heading">TODO APPLICATION</h1>
-        {this.renderInputElements()}
-        {this.renderForm()}
+        <div className="form-login">
+          {this.renderInputElements()}
+          {this.renderForm()}
+        </div>
+
         <ul className="list-container">
           <li className="table-header">
             <p className="table-header-cell name-column">TO DO</p>

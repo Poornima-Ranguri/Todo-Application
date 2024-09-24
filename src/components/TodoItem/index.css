@@ -1,46 +1,94 @@
-.table-row {
-  display: flex;
-  background-color: #f1f5f9;
-  list-style-type: none;
-  border: 1px solid #cbd5e1;
-  padding: 0px;
-  text-align: center;
+@media screen and (min-width: 768px) {
+  .table-row {
+    display: flex;
+    background-color: #f1f5f9;
+    list-style-type: none;
+    border: 1px solid #cbd5e1;
+    padding: 0px;
+    text-align: center;
+  }
+
+  .table-cell {
+    color: #334155;
+    font-family: "Roboto";
+    font-size: 16px;
+    font-weight: 500;
+    margin-left: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 150px;
+  }
+
+  .name-column {
+    border-right: none;
+  }
+
+  .separator {
+    margin: 0;
+    border: 1px solid #cbd5e1;
+  }
+
+  .edit-button {
+    outline: none;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+  }
+
+  .edit-icon {
+    margin-right: 10px;
+  }
+
+  .buttons-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
-.table-cell {
-  color: #334155;
-  font-family: "Roboto";
-  font-size: 16px;
-  font-weight: 500;
-  margin-left: 10px;
-  padding-left: 15px;
-  padding-right: 15px;
-  width: 150px;
-}
+@media screen and (max-width: 768px) {
+  .table-row {
+    display: flex;
+    background-color: #f1f5f9;
+    list-style-type: none;
+    border: 1px solid #cbd5e1;
+    padding: 0px;
+    text-align: center;
+  }
 
-.name-column {
-  border-right: none;
-}
+  .table-cell {
+    color: #334155;
+    font-family: "Roboto";
+    font-size: 10px;
+    font-weight: 500;
 
-.separator {
-  margin: 0;
-  border: 1px solid #cbd5e1;
-}
+    padding-right: 3px;
+    width: 80px;
+  }
 
-.edit-button {
-  outline: none;
-  cursor: pointer;
-  background-color: transparent;
-  border: none;
-}
+  .name-column {
+    border-right: none;
+  }
 
-.edit-icon {
-  margin-right: 10px;
-}
+  .separator {
+    margin: 0;
+    border: 1px solid #cbd5e1;
+  }
 
-.buttons-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  .edit-button {
+    outline: none;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+  }
 
+  .edit-icon {
+    margin-right: 3px;
+  }
+
+  .buttons-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
