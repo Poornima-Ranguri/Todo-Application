@@ -1,0 +1,46 @@
+.table-row {
+  display: flex;
+  background-color: #f1f5f9;
+  list-style-type: none;
+  border: 1px solid #cbd5e1;
+  padding: 0px;
+  text-align: center;
+}
+
+.table-cell {
+  color: #334155;
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 500;
+  margin-left: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 150px;
+}
+
+.name-column {
+  border-right: none;
+}
+
+.separator {
+  margin: 0;
+  border: 1px solid #cbd5e1;
+}
+
+.edit-button {
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+
+.edit-icon {
+  margin-right: 10px;
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
