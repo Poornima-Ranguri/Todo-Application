@@ -1,10 +1,13 @@
-import { MdOutlineModeEdit } from "react-icons/md";
 import { MdOutlineDelete } from "react-icons/md";
 import "./index.css";
 
 const TodoItem = (props) => {
-  const { todoDetails } = props;
-  const { todo, priority, status } = todoDetails;
+  const { todoDetails, onDeletingTodo } = props;
+  const { todo, priority, status, id } = todoDetails;
+
+  const onDelete = () => {
+    onDeletingTodo(id);
+  };
 
   return (
     <li className="table-row">
@@ -15,14 +18,14 @@ const TodoItem = (props) => {
       <p className="table-cell name-column">{status}</p>
       <hr className="separator" />
       <div className="buttons-container table-cell name-column">
-        <button className="table-cell name-column edit-button" type="button">
-          <MdOutlineModeEdit className="edit-icon" />
-        </button>
-        <button className="table-cell name-column edit-button" type="button">
-          <MdOutlineDelete className="delete-icon" />
+        <button
+          className="table-cell name-column edit-button"
+          type="button"
+          onClick={onDelete}
+        >
+          <MdOutlineDelete className="edit-icon" />
         </button>
       </div>
-      
     </li>
   );
 };
