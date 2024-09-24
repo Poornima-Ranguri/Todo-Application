@@ -73,7 +73,7 @@ class Home extends Component {
     return (
       <div className="submit-form">
         <div className="inputGroup">
-          <label htmlFor="todo">Todo:</label>
+          <label htmlFor="todo">Todo :</label>
           <input
             type="text"
             id="todo"
@@ -84,7 +84,7 @@ class Home extends Component {
           />
         </div>
         <div className="inputGroup">
-          <label htmlFor="priority">Priority</label>
+          <label htmlFor="priority">Priority :</label>
           <input
             type="priority"
             id="priority"
@@ -95,7 +95,7 @@ class Home extends Component {
           />
         </div>
         <div className="inputGroup">
-          <label htmlFor="status">Status:</label>
+          <label htmlFor="status">Status :</label>
           <input
             type="text"
             id="status"
